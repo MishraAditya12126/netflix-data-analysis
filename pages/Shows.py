@@ -37,7 +37,7 @@ genre = st.sidebar.selectbox('Choose a Genre',show_analysis.genres())
 btn2 = st.sidebar.button('Find Genres')
 
 if btn2:
-    st.write(f'Top Shows in this genre :red[{genre}] are:')
+    st.write(f'Top Shows in :red[{genre}] genre are:')
     st.dataframe(show_analysis.top_shows((genre)))
 
 
